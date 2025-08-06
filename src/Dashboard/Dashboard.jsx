@@ -38,7 +38,9 @@ const Dashboard = () => {
           <td>{p.EndDate}</td>
           <td>{p.status}</td>
         </tr>
-        ))):(<tr>No project available</tr>)}
+        ))):(<tr>
+      <td colSpan="7" className="text-center">No project available</td>
+    </tr>)}
       </tbody>
     </Table>
     </div>
