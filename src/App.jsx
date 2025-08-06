@@ -15,16 +15,16 @@ function App() {
   }, [count]);
 
   // Tick every second
-  useEffect(() => {
-    const timer = setInterval(() => {
-      console.log("Tick");
-    }, 1000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     console.log("Tick");
+  //   }, 1000);
 
-    return () => {
-      clearInterval(timer);
-      console.log("clean-up");
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(timer);
+  //     console.log("clean-up");
+  //   };
+  // }, []);
 
   return (
     <>
