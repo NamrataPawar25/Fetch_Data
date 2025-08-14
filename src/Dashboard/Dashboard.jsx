@@ -51,8 +51,8 @@ const Dashboard = () => {
                 <td>{p.ProjectName}</td>
                 <td>{p.Details}</td>
                 <td>{p.Department}</td>
-                <td>{p.startDate}</td>
-                <td>{p.EndDate}</td>
+                <td>{new Date(p.startDate * 1000).toLocaleDateString()}</td>
+                <td>{new Date(p.EndDate * 1000).toLocaleDateString()}</td>
                 <td>{p.status}</td>
               </tr>
             ))
